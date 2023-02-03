@@ -1,0 +1,257 @@
+/* Start Variables */
+:root {
+    --main-color: #0078d4;
+}
+/* End Variables */
+/* Start Global Rules */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.cv {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-rows: auto;
+}
+@media (min-width: 1200px) {
+    .cv {
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-template-rows: auto;
+    }
+}
+.c1 {
+    background-color: #1e1e1e;
+}
+.cont {
+    background-color: #f5f5f5;
+}
+.skills,
+.contact {
+    margin-left: 10px;
+}
+.skills h2,
+.contact h2 {
+    color: var(--main-color);
+    font-size: 17px;
+}
+.cont .education h2,
+.cont .courses h2,
+.cont .projects h2,
+.personal h2,
+.cont .experience h2 {
+    font-size: 20px;
+    font-family: poor story;
+    margin: 50px 0 0 300px;
+    color: var(--main-color);
+}
+.cont .courses p,
+.personal p,
+.cont .education p {
+    margin: 10px 0 0 400px;
+    font-size: 17px;
+    color: var(--main-color);
+}
+/* End Global Rules */
+/* Start CV */
+/* Start Header */
+.header{
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+.header h1 {
+    font-size: 19px;
+    margin-bottom: 0;
+}
+
+.header p {
+    font-size: 12px;
+    color: rgb(152, 151, 151);
+}
+@media (max-width: 767px) {
+    .header h1 {
+        font-size: 25px;
+    }
+    .header p {
+        font-size: 17px;
+    }
+}
+/* End Header */
+/* Start Skills */
+.skills p {
+    color: rgb(152, 151, 151);
+    font-size: 12px;
+    width: 200px;
+    display: block;
+}
+.skills progress {
+    width: 80%;
+    margin-left: 20px;
+    vertical-align:bottom;
+}
+.skills ul {
+    color: white;
+    font-size: 13px;
+    margin: 5px;
+}
+.skills ul li {
+    list-style-type: none;
+    margin-left: 9px;
+}
+.skills ul li::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--main-color);
+    margin: 5px 5px 0 0;
+    border-radius: 50%;
+}
+@media (max-width: 767px) {
+    .skills h2 {
+        font-size: 15px;
+    }
+    .skills progress{
+        width: 75%;
+    }
+    .skills ul{
+        font-size: 15px;
+    }
+}
+/* End Skills */
+/* Start Contact */
+.contact p {
+    color: rgb(152, 151, 151);
+    margin: 5px 0 0 0;
+}
+.contact p span {
+    color: white;
+    display: block;
+    margin: 0 0 0 35px;
+}
+.contact p a img {
+    width: 50px;
+    margin: 10px 0 0 20px;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+    .contact p span {
+        font-size: 15px;
+        margin: 0 0 0 20px;
+    }
+    .contact p a img {
+        margin: 5px 0 0 30px;
+    }
+}
+/* End Contact */
+/* Start Experience */
+.cont .experience p {
+    margin: 10px 0 0 400px;
+    font-size: 16px;
+}
+.cont .experience p span {
+    color: rgba(212, 64, 0, 0.504);
+}
+/* End Experience */
+
+/* Start Education */
+/* Start Courses */
+.cont .education p span,
+.cont .courses p span {
+    color: black;
+    margin: 5px 0 0 50px;
+    font-size: 17px;
+    display: inline;
+}
+@media (max-width: 767px) {
+        .cont .courses h2,
+        .cont .education h2,
+        .cont .experience h2 {
+            font-size: 20px;
+            margin: 30px;
+        }
+        .cont .courses p,
+        .cont .education p,
+        .cont .experience p {
+            margin: 5px 0 0 50px;
+            font-size: 15px;
+        }
+        .cont .courses p span,
+        .cont .education p span {
+            margin: 5px 0 0 50px;
+            font-size: 12px;
+        }
+}
+/* End Courses */
+/* End Education */
+/* Start projects */
+.cont .projects p {
+    margin: 5px 0 0 400px;
+    font-size: 15px;
+}
+.cont .projects p a {
+    color: var(--main-color);
+    font-size: 15px;
+    text-decoration: none;
+    text-shadow: 3px 3px 9px black;
+}
+@media (max-width: 767px) {
+    .cont .projects h2,
+    .personal h2 {
+        margin: 30px;
+        font-size: 20px;
+    }
+    .cont .projects p,
+    .personal p {
+        margin: 5px 0 0 50px;
+        font-size: 15px;
+    }
+}
+/* End projects */
+/* Start Personal */
+.personal p span {
+    color: black;
+    margin: 5px 0 0 100px;
+    display: inline;
+}
+@media (max-width: 767px) {
+    .personal p span {
+        font-size: 15px;
+        margin: 5px 0 0 50px;
+    }
+}
+/* End Personal */
+/* End CV */
+/* Start Footer */
+.footer {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+
+}
+.footer span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+@media (max-width: 767px) {
+    .footer {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+/* End Footer */
